@@ -1,4 +1,4 @@
-import Header from "../components/header"
+import Header from "../components/Header"
 import Categories from "../components/Categories"
 import "../styles/Home.css"
 import React,{useRef} from 'react'
