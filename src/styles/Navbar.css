@@ -1,0 +1,188 @@
+/* === BASE STYLES === */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #E8E8E8;
+  font-family: 'Outfit', sans-serif;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navbar-icon-brand {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-brand-Name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Nav Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-li-item:hover {
+  color: orange;
+}
+
+/* Search */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2px 5px;
+  height: 32px;
+  width: 300px;
+}
+
+.search-input {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 6px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-button:hover {
+  transform: scale(1.1);
+}
+
+/* Cart Icon */
+.navbar-cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.navbar-cart-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  transition: transform 0.2s ease;
+}
+
+.navbar-cart-icon:hover {
+  transform: scale(1.05);
+}
+
+.cart-count-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: linear-gradient(135deg, #ff5252, #ff1744);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 12px;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* === RESPONSIVE STYLES === */
+
+/* Tablets and below */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 16px;
+  }
+
+  .navbar-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-links {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar-search {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .navbar-brand-Name {
+    font-size: 1.2rem;
+  }
+
+  .navbar-search {
+    width: 80%;
+  }
+
+  .search-button {
+    margin-left: 6px;
+  }
+
+  .navbar-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-cart {
+    margin: 0;
+  }
+
+  .navbar-left {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

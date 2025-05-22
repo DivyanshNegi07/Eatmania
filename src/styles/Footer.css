@@ -1,0 +1,166 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #E8E8E8;
+    font-family: outfit;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto; 
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-brand {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-icon-brand {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-brand-Name {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer-app {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-appStore {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.footer-appStore-text {
+    width: 200px;
+    font-size: 12px;
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-subscribe {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.subscribe-input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.subscribe-button {
+    padding: 8px 16px;
+    background-color: #FC8A06;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.underline-text {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #333;
+}
+
+.footer-right {
+    display: flex;
+    gap: 40px;
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+.footer-right-left,
+.footer-right-right {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer-right-left h3,
+.footer-right-right h3 {
+    margin: 0;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        width: 100%;
+    }
+
+    .footer-appStore {
+        width: 150px;
+        margin-left: 0;
+    }
+
+    .footer-appStore-text {
+        margin-left: 0;
+        width: auto;
+    }
+
+    .footer-brand {
+        padding-left: 0;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        padding-right: 0;
+        gap: 20px;
+    }
+
+    .footer-subscribe {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscribe-input,
+    .subscribe-button {
+        width: 100%;
+    }
+
+    .navbar-brand-Name {
+        font-size: 20px;
+    }
+
+    .footer-middle {
+        align-items: stretch;
+    }
+}
